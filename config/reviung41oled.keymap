@@ -19,15 +19,15 @@
 
                 default_layer {
 // -------------------------------------------------------------------------------------
-// |  ESC |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |   BKSP    |
-// | TAB  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |    RET    |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  B  |  N   |  M  |  .  |  /  | SHFT      |
+// | ESC  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |   BKSP    |
+// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |    '      |
+// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT(RET) |
 //                         | ALT | LWR | SPC | RSE  | ALT |
                         bindings = <
-   &kp ESC   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BKSP
-   &kp TAB   &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp RET
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp B &kp N  &kp M &kp DOT &kp FSLH &kp RSHFT
-                        &kp LCRTL &lt 2 LALT &kp SPACE &mo 1  &mo 3 
+   &kp ESC   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I  &kp O     &kp P    &kp BKSP
+   &kp TAB   &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K  &kp L     &kp SEMI &kp RET
+   &kp LCTRL &kp Z &kp X &kp C &kp V &kp B   &kp B &kp N  &kp M  &kp COMMA &kp DOT  &kp RSHFT 
+                        &kp LALT  &lt 2 SPACE &kp SPACE &lt 2 BKSP &mo 3
                         >;
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
@@ -64,8 +64,8 @@
 
                 adjust_layer {
 // -----------------------------------------------------------------------------------------
-// | RGB BRI+ | RGB SAT+ | RGB HUE+ | RGB ANI+ |    | RGB TOG |   |  BT1  | BT2 | BT3 | BT4 | BT5 |        |
-// | RGB BRI- | RGB SAT- | RGB HUE- | RGB ANI- |    | BT CLR  |   |       |     |     |     |     |        |
+// | RGB BRI+ | RGB SAT+ | RGB HUE+ | RGB ANI+ |    | RGB TOG |   |  BT1  | BT2 | BT3 | BT4 | BT5 | BT CLR |
+// | RGB BRI- | RGB SAT- | RGB HUE- | RGB ANI- |    |         |   |       |     |     |     |     |        |
 // |          |          |          |          |    |         |   |       |     |     |     |     |        |
 //                                              |     |     |     |     |     |
                         bindings = <
